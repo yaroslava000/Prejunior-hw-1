@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--Header-->   
+    <header id="header">
+    <h1>The Last of Us</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About the game</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#map">Map</a></li>
+        </ul>
+    </nav>
+    </header> 
+
+    <!--Main content-->
+    <main>
+        <section id="about">
+            <h2>About the game</h2>
+            <p><em>The Last of Us</em> is a post-apocalyptic action-adventure game by Naughty Dog, telling the story of Joel and Ellie as they try to survive in a world ravaged by a deadly fungal infection</p>
+            <nav><a href="#header">back to header</a></nav>
+        </section>
+        <section id="characters">
+            <h2>Main characters</h2>
+            <ul>
+                <li><strong>Joel:</strong>The main protagonist - tough, quiet, and deeply protective.</li>
+                <li><strong>Ellie:</strong>A young girl who may be the key to saving humanity due to her immunity, but because it could cost her her life, Joel will prevent it.</li>
+                <li><strong>Tommy:</strong>Joel's younger brother, a former Firefly who later helps Ellie.</li>
+                <li><strong>Dina:</strong>Ellie's girlfriend and companion during her journey in The Last of Us Part II.</li>
+                <li><strong>Abby:</strong>A soldier of the WLF, deeply tied to Joel's past; a central character in Part II(with Ellie).</li>
+            </ul>
+            <nav><a href="#header">back to header</a></nav>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Take a look at screenshots from the game:</p>
+            <img src="./images/Joel_Ellie_1.jpg" alt="Joel and Ellie" width="200">
+            <img src="./images/Joel_Ellie_2.jpg" alt="Joel and Ellie" width="200">
+            <img src="./images/Infected_enemy.jpg" alt="Infected enemy" width="200">
+            <img src="./images/Tommy.jpg" alt="Tommy Miller" width="200">
+            <img src="./images/Dina.jpg" alt="Dina" width="200">
+            <img src="./images/Abby.jpg" alt="Abby" width="200">
+            <nav><a href="#header">back to header</a></nav>
+        </section>
+        <section id="map">
+            <h2>Interactive map</h2>
+            <p>Click on the locations to learn more:</p>
+            <div class="map-container">
+                <img src="./images/map.jpg" usemap="#game-map" alt="Map of The Last of Us showing Boston, Jackson, Salt Lake City and Seattle">
+                <map name="game-map">
+                    <area shape="circle" coords="27,189,10" href="#boston" alt="Boston" title="Boston - Start of the journey" tabindex="0">
+                    <area shape="circle" coords="27,286,10" href="#jackson" alt="Jackson" title="Jackson - Peaceful settlement led by Tommy" tabindex="0">
+                    <area shape="circle" coords="31,350,10" href="#saltlake" alt="Salt Lake City" title="Salt Lake City - Firefly hospital and the climax of Part I" tabindex="0">
+                    <area shape="circle" coords="528,217,10" href="#seattle" alt="Seattle" title="Seattle - Site of Ellie and Abby's story in Part II" tabindex="0">
+                </map>
+                <p>to view the description for Boston, Jackson, and Salt Lake City, click on the circle next to the label on the left, to view the description for Seattle, there is no such circle, so click on the location in the Washington area</p>
+            </div>
+            <div class="location-info">
+                <div id="boston">
+                    <h3>Boston (Quarantine Zone)</h3>
+                    <p>The starting point of Joel and Ellie's journey under strict military control.</p>
+                </div>
+                <div id="jackson">
+                    <h3>Jackson, Wyoming</h3>
+                    <p>A peaceful settlement led by Tommy, Joel's brother.</p>
+                </div>
+                <div id="seattle">
+                    <h3>Seattle</h3>
+                    <p>The center of Ellie and Abby's stories in Part II, with intense conflict between factions.</p>
+                </div>
+                <div id="saltlake">
+                    <h3>Salt Lake City</h3>
+                    <p>The location of the Firefly hospital and the climax of the first game.</p>
+                </div>
+            </div>
+            <nav><a href="#header">back to header</a></nav>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer id="contact">
+        <p>© 2025 The Last of Us Fan site. All rights to the game belong to Naughty Dog</p>
+        <p>Contact: <a href="mailto:yaroslavadoroshko000@gmail.com">email</a></p>
+        <p>Other links: <a href="https://www.instagram.com/naughty_dog_inc?igsh=NjJ1anVleDNrb2s1">Naughty Dog instagram</a></p>
+        <nav><a href="#header">back to header</a></nav>
+    </footer>
+</body>
+</html>

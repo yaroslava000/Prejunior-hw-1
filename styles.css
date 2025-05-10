@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+header{
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    margin: 0;
+    font-size: 2.5em;
+    color: #d41a1a;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #d57070;
+}
+nav ul li a:hover{
+    color: #d41a1a;
+}
+main{
+    padding: 20px;
+}
+section{
+    margin-bottom: 40px;
+}
+h2{
+    border-bottom: 2px solid #d41a1a;
+    padding-bottom: 5px;
+}
+#gallery img{
+    margin: 10px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#gallery img:hover{
+    transform: scale(1.05);
+    border-color: #d41a1a;
+}
+footer{
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+}
+footer a{
+    color: #d57070;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #d41a1a;
+}
+.location-info > div {
+    display: none;
+}
+#boston:target,
+#jackson:target,
+#seattle:target,
+#saltlake:target {
+    display: block;
+}
+.location-info {
+    margin-top: 20px;
+}
+.location-info h3 {
+    color: #fff;
+}
+.location-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.map-container img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav a{
+    text-decoration: none;
+    color: #d57070;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+nav a:hover{
+    color: #d41a1a;
+}
