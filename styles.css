@@ -43,6 +43,7 @@ h2{
     padding-bottom: 5px;
 }
 #gallery img{
+    max-width: 100%;
     margin: 10px;
     border: 2px solid #444;
     border-radius: 10px;
@@ -86,10 +87,10 @@ footer a:hover{
     line-height: 1.5;
 }
 .map-container img{
+    position: relative; 
+    z-index: 1;
     max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    overflow-x: auto;
 }
 html{
     scroll-behavior: smooth;
@@ -104,4 +105,41 @@ nav a{
 }
 nav a:hover{
     color: #d41a1a;
+}
+
+@media (max-width: 580px){
+    header h1{
+        font-size: 0.7em;
+    }
+    nav ul{
+        display: none;
+    }
+    section{
+        height: 30vh;
+    }
+    .section__content{
+        gap: 20px;
+        width: 100%;
+        font-size: 0.5em;
+    }
+    .section__content img{
+        display: block;
+        margin: 0;
+        padding: 0.5rem;
+        width: 100%;
+    }
+    .location-info p{
+        font-size: 0.3em;
+    }
+}
+@media(max-width: 470px){
+    #characters ul,
+    .section__list{
+        font-size: 0.5em;
+    }
+    .section__button{
+        font-size: 0.6em;
+        padding: 10px auto;
+        min-width: 10%;
+    }
 }
