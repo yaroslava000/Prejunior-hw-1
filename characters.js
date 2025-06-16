@@ -28,12 +28,12 @@ characters.push({
         this.age += 1;
     }
 })
-characters.forEach((char, index) => char.id = index);
-const filtered = characters.filter(char => char.isImmune);
+const charactersIndex = characters.map((char, index) => ({...char, id: index}));
+const filtered = charactersIndex.filter(char => char.isImmune);
 filtered.forEach(char => {
     console.log(`${char.id}. ${char.name}`);
 });
-const sum = characters.reduce((acc, char) => acc + char.age, 0);
+const sum = charactersIndex.reduce((acc, char) => acc + char.age, 0);
 console.log("Total age:", sum);
 const someFunc = () => {
     const fetchData = async () => {
