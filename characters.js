@@ -33,8 +33,10 @@ const filtered = charactersIndex.filter(char => char.isImmune);
 filtered.forEach(char => {
     console.log(`${char.id}. ${char.name}`);
 });
+
 const sum = charactersIndex.reduce((acc, char) => acc + char.age, 0);
 console.log("Total age:", sum);
+
 const someFunc = () => {
     const fetchData = async () => {
         console.log("start")
@@ -45,11 +47,8 @@ const someFunc = () => {
         } catch(e) {
             console.log("error:", e)
         }
-
         console.log("finish")
     }
-
     fetchData()
 }
-
 someFunc()
